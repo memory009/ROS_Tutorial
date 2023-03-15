@@ -12,8 +12,28 @@ catkin_make
 # launch carla
 cd ~/CARLA_0.9.13/
 sh CarlaUE4.sh
+
 # launch carla-ros-bridge
+cd ~/ros_ws/devel/
+source setup.bash
+cd ..
 roslaunch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch
 # launch rviz to monitor carla
 rviz
+```
+
+## 文件管理工具
+### 使用rospack
+```
+rospack find [package_name]
+# 将会输出 YOUR_INSTALL_PATH/share/roscpp
+```
+### 使用roscd
+
+
+
+## carla 离屏模式
+
+```
+./CarlaUE4.sh -RenderOffScreen
 ```
