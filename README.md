@@ -8,15 +8,23 @@ catkin_make
 ```
 
 ## carla-ros-bridge
+create a new terminal
 ```
 # launch carla
 cd ~/CARLA_0.9.13/
 sh CarlaUE4.sh
+```
 
+create a new terminal
+```
 # launch carla-ros-bridge
 cd ~/ros_ws/devel/
 source setup.bash
 cd ..
+```
+
+create a new terminal
+```
 roslaunch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch
 # launch rviz to monitor carla
 rviz
