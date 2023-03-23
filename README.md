@@ -32,3 +32,9 @@ echo $ROS_PACKAGE_PATH
 
 ### ROS话题
 [rostopic](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rostopic.md)
+
+### rosservice的使用
+[rosservice](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosservice.md)
+
+### rosparam的使用
+[rosservice](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosparam.md)

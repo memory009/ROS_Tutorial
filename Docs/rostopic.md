@@ -1,10 +1,10 @@
 ## 使用rostopic echo 显示在某个话题上发布的数据
 ```
 # 用法
-rostopic echo [topic]
+$ rostopic echo [topic]
 # 例子
-rostopic list #查看目前有哪些话题
-rostopic echo /turtle1/cmd_vel #以/turtle1/cmd_vel话题为例，查看话题上发布的数据
+$ rostopic list #查看目前有哪些话题
+$ rostopic echo /turtle1/cmd_vel #以/turtle1/cmd_vel话题为例，查看话题上发布的数据
 ###########################################################################
 ---
 linear: 
@@ -20,12 +20,12 @@ angular:
 
 ## 使用rostopic list列出当前已被订阅和发布的所有话题
 ```
-rostopic list
+$ rostopic list
 ```
 
 ## 使用rostopic type命令用来查看所发布话题的消息类型
 ```
-rostopic type [topic]
+$ rostopic type [topic]
 ```
 e.g. run 'rostopic type /turtle1/cmd_vel'in terminal
 output : geometry_msgs/Twist
@@ -33,7 +33,7 @@ output : geometry_msgs/Twist
 ## 使用rosmsg查看消息的详细信息：
 ```
 # e.g.
-rosmsg show geometry_msgs/Twist
+$ rosmsg show geometry_msgs/Twist
 # output:
 geometry_msgs/Vector3 linear
   float64 x
@@ -49,7 +49,7 @@ geometry_msgs/Vector3 angular
 ```
 # e.g.
 # rostopic pub [topic] [msg_type] [args]
-rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
 # 以上命令会发送一条消息给turtlesim，告诉它以2.0大小的线速度和1.8大小的角速度移动
 ```
 解析：
@@ -82,9 +82,9 @@ YAML命令行文档:http://wiki.ros.org/ROS/YAMLCommandLine
 ## 使用rostopic hz 报告数据发布的速率
 ```
 # 用法 
-rostopic hz [topic]
+$ rostopic hz [topic]
 # e.g. 
-rostopic hz /turtle1/pose
+$ rostopic hz /turtle1/pose
 ```
 output：
 ```
