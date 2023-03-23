@@ -101,3 +101,36 @@ average rate: 59.463
         min: 0.004s max: 0.030s std dev: 0.00380s window: 290
 
 ```
+
+## 控制新生成的turtle2
+[rosservice.md](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosservice.md)提到如何生成一个新的turtle，即turtle2,下面记录如何通过发布话题的方式控制turtle的移动
+```
+# get topic currently
+$ rostopic
+```
+output:
+```
+/rosout
+/rosout_agg
+/statistics
+/turtle1/cmd_vel
+/turtle1/color_sensor
+/turtle1/pose
+/turtle2/cmd_vel
+/turtle2/color_sensor
+/turtle2/pose
+```
+
+```
+# get type about turtle2
+$ rostopic type /turtle2/cmd_vel
+```
+output:
+```
+geometry_msgs/Twist
+```
+发布一个topic，包含linear(线速度)，angular(角速度)，控制turtle2移动。
+```
+# 用法 rostopic pub [topic] [msg_type] [args]
+$ rostopic pub -1 /turtle2/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+```

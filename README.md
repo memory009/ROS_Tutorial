@@ -37,4 +37,4 @@ echo $ROS_PACKAGE_PATH
 [rosservice](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosservice.md)
 
 ### rosparam的使用
-[rosservice](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosparam.md)
+[rosparam](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/rosparam.md)
