@@ -4,7 +4,7 @@
 $ rostopic echo [topic]
 # 例子
 $ rostopic list #查看目前有哪些话题
-$ rostopic echo /turtle1/cmd_vel #以/turtle1/cmd_vel话题为例，查看话题上发布的数据
+$ rostopic echo /turtle1/cmd_vel #以/turtle1/cmd_vel话题为例，实时监听话题上发布的数据
 ###########################################################################
 ---
 linear: 
