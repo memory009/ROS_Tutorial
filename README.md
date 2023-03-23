@@ -32,7 +32,7 @@ roslaunch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch
 # launch rviz to monitor carla
 rviz
 ```
-############################################################################################################
+#######################################################################
 
 ## 文件管理工具
 ### 使用rospack
@@ -57,6 +57,7 @@ echo $ROS_PACKAGE_PATH
 ./CarlaUE4.sh -RenderOffScreen
 ```
 
+#######################################################################
 ## 为catkin创建一个工作区
 ```
 $ mkdir -p ~/catkin_ws/src
@@ -116,8 +117,6 @@ rosrun turtlesim turtlesim_node __name:=my_turtle
 rosnode ping my_turtle
 ```
 
-## building...
-（http://wiki.ros.org/cn/ROS/Tutorials）1.1-6理解ros话题
 
 ## 小乌龟demo
 ```
