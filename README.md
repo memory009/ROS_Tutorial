@@ -41,3 +41,9 @@ echo $ROS_PACKAGE_PATH
 
 ### rqt_consloe&roslaunch的使用
 [roslaunch](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/roslaunch.md)
+
+### ROS_Multi-machine communication
+[ROS_Multi-machine communication](https://github.com/memory009/ROS_Tutorial/blob/main/ROS_Multi-machine communication/README.md)
+
+
+
