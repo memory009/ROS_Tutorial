@@ -48,6 +48,7 @@ $ roslaunch yahboomcar_nav yahboomcar_navigation.launch
 ```
 # 在本机
 $ export...(详见多机通讯从机step1&2)
+$ cd ~/yahboomcar_ws(?)
 $ source devel/setup.bash
 $ roslaunch yahboomcar_nav view_navigate.launch
 ```
