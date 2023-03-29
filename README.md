@@ -43,7 +43,7 @@ echo $ROS_PACKAGE_PATH
 [roslaunch](https://github.com/memory009/ROS_Tutorial/blob/main/Docs/roslaunch.md)
 
 ### ROS_Multi-machine communication
-[ROS_Multi-machine communication](https://github.com/memory009/ROS_Tutorial/blob/main/ROS_Multi-machine communication/README.md)
+[ROS_Multi-machine communication](https://github.com/memory009/ROS_Tutorial/tree/main/ROS_Multi-machine%20communication)
 
 
 
